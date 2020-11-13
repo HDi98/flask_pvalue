@@ -1,0 +1,44 @@
+<html lang= "en"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>P值计算</title>
+    </head>
+    <body>
+        <h1 align = 'center'>P值计算小网页</h1>
+        <hr />
+
+        <form method="post">
+            <table align="center">
+                <tr>
+                    <td>请选择检验（01结果请选卡方检验，其余请选择t检验）</td>
+                    <td><select name="test_type"> 
+                        <option value="default_info">请选择检验类型</option>
+                        <option value="ttest">T检验</option>
+                        <option value="chisq">卡方检验</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>base mean: </td><td><input type="number" name="base_mean" step="0.01"></td>
+                </tr><tr>
+                    <td>base varience: </td><td><input type="number" name="base_var" step="0.01"></td>
+                </tr><tr>
+                    <td>base count: </td><td><input type="number" name="base_cnt" step="0.01"></td>
+                </tr><tr>
+                    <td>test mean: </td><td><input type="number" name="test_mean" step="0.01"></td>
+                </tr><tr>
+                    <td>test varience: </td><td><input type="number" name="test_var" step="0.01"></td>
+                </tr><tr>
+                    <td>test count: </td><td><input type="number" name="test_cnt" step="0.01"></td>
+                </tr>
+                    
+                
+            </table>
+            <p align = 'center'>输入请保留两位小数</p>
+            <p align = 'center'> <input  type="submit" value="提交" > </p>
+            
+            
+        </form>
+
+    </body>
+</html>
+

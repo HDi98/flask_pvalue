@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P值展示页</title>
+</head>
+<body>
+<table border="1" align="center">
+    <tr>
+        <th>test statistic</th>
+        <th>Pvalue</th>
+        <th>lower confidence interval</th>
+        <th>upper confidence interval</th>
+    </tr>
+ 
+    <tr>
+        <td>{{ test_stat }}</td>
+        <td>{{ P_value }}</td>
+        <td>{{ lower_interval }}</td>
+        <td>{{ upper_interval }}</td>
+    </tr>
+
+</table>
+<p>{{ message }}</p>
+<p>*置信区间代表提升比例的95%置信区间</p>
+</body>
+</html>
